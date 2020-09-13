@@ -39,12 +39,37 @@
     </div>
   </header>
 
-  <main class="mdl-layout__content mdl-color--grey-100">
+  <main class="mdl-layout__content mdl-color--grey-100">    
     <div id="portfolio">
       <img id="logo-content" src="/images/logo-content.jpg" alt="Logo for DSC AE-FUNAI">
       <h3>DSC AE-FUNAI</h3>
       <p>Developer Student Clubs help students bridge the gap between theory and practice.</p>
       <p>Know more at <a href="https://g.co/dev/dsc" target="_blank" rel="noreferer noopener">g.co/dev/dsc</a></p>
+    </div>
+
+    <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
+      <!-- Messages container -->
+      <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+        <h4>&nbsp;<i class="material-icons">chat_bubble_outline</i> Friendly Chat</h4>
+        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+          <div id="messages">
+          </div>
+          <form id="message-form" action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="message" autocomplete="off">
+              <label class="mdl-textfield__label" for="message">Message...</label>
+            </div>
+            <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+      </div>
     </div>
   </main>
 
@@ -52,6 +77,7 @@
 <script src="/__/firebase/7.18.0/firebase-app.js"></script>
 <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
 <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+<script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
 <script src="/__/firebase/init.js"></script>
 
 <script src="scripts/main.js"></script>

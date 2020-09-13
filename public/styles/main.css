@@ -2,7 +2,7 @@ html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-main {
+main, #messages-card {
   height: 100%;
   padding-bottom: 0;
 }
@@ -25,6 +25,17 @@ main {
   max-height: 256px;
   border-radius: 50%;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);
+}
+
+#messages-card-container {
+  height: calc(100% - 35px);
+  padding-bottom: 0;
+  display: flex !important;
+  justify-content: center;
+}
+
+#messages-card {
+  margin-top: 15px;
 }
 
 .mdl-layout__header-row span {
@@ -53,6 +64,81 @@ main {
   height: 100%;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+#messages {
+  overflow-y: auto;
+  margin-bottom: 10px;
+  height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+#message-filler {
+  flex-grow: 1;
+}
+
+.message-container:first-of-type {
+  border-top-width: 0;
+}
+
+.message-container {
+  display: block;
+  margin-top: 10px;
+  border-top: 1px solid #f3f3f3;
+  padding-top: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.message-container.visible {
+  opacity: 1;
+}
+
+.message-container .pic {
+  background-image: url('/images/profile_placeholder.png');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  border-radius: 20px;
+}
+
+.message-container .spacing {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.message-container .message {
+  display: table-cell;
+  width: calc(100% - 40px);
+  padding: 5px 0 5px 10px;
+}
+
+.message-container .name {
+  display: inline-block;
+  width: 100%;
+  padding-left: 40px;
+  color: #bbb;
+  font-style: italic;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+#message-form {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 48px);
+  float: left;
+}
+
+#message-form .mdl-textfield {
+  width: calc(100% - 100px);
+}
+
+#message-form button, #image-form button {
+  width: 100px;
+  margin: 15px 0 0 10px;
 }
 
 .mdl-card {
@@ -95,6 +181,11 @@ main {
   padding-left: 20px;
 }
 
+.message img {
+  max-width: 300px;
+  max-height: 200px;
+}
+
 @media screen and (max-width: 610px) {
   header {
     height: 113px;
@@ -114,6 +205,20 @@ main {
     width: 33px;
     height: 33px;
     background-size: 33px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex !important;
+    justify-content: space-between;
+    flex-basis: 512px;
+  }
+}
+
+@media (min-width: 992px) {
+  #portfolio {
+    margin-left: 128px;
   }
 }
 
