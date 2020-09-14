@@ -63,6 +63,12 @@
               Send
             </button>
           </form>
+          <form id="image-form" action="#">
+            <input id="mediaCapture" type="file" accept="image/*" capture="camera">
+            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400 mdl-color-text--white">
+              <i class="material-icons">image</i>
+            </button>
+          </form>
         </div>
       </div>
 
@@ -78,6 +84,7 @@
 <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
 <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
 <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+<script src="/__/firebase/7.18.0/firebase-storage.js"></script>
 <script src="/__/firebase/init.js"></script>
 
 <script src="scripts/main.js"></script>

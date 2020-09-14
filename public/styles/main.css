@@ -125,6 +125,13 @@ main, #messages-card {
   box-sizing: border-box;
 }
 
+#image-form {
+  display: flex;
+  flex-direction: row;
+  width: 48px;
+  float: right;
+}
+
 #message-form {
   display: flex;
   flex-direction: row;
@@ -181,9 +188,23 @@ main, #messages-card {
   padding-left: 20px;
 }
 
+#image-form #submitImage {
+  width: auto;
+  padding: 0 6px 0 1px;
+  min-width: 0;
+}
+
+#image-form #submitImage .material-icons {
+  top: -1px;
+}
+
 .message img {
   max-width: 300px;
   max-height: 200px;
+}
+
+#mediaCapture {
+  display: none;
 }
 
 @media screen and (max-width: 610px) {
