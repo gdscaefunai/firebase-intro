@@ -1,5 +1,7 @@
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
+  width: 100%;
+  max-width: 1500px;
 }
 
 main {
