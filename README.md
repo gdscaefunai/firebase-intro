@@ -5,7 +5,7 @@ This repo contains the code used for the introduction to Firebase Workshop for [
 The slide that made use of the code in this repo are at https://docs.google.com/presentation/d/1ud6o3QpegtLgsoq8kRVGs2cmpwd9mpwD8HLK50Z6WdU/edit?usp=sharing
 
 ## How it Works
-Aside the main branch, there are four other branches: hosting, auth, firestore and storage. The idea is to showcase each of the above four Firebase features, one after the other, in real time, as they are being discussed, and to checkout to each branch and deploy during the course of the overview.
+Aside the main branch, there are four other branches: `hosting`, `auth`, `firestore` and `storage`. The idea is to showcase each of the above four Firebase features, one after the other, in real time, as they are being discussed, and to checkout to each branch and deploy during the course of the overview.
 
 In the first place, the speaker gives an introduction or overview of Firebase. Then the speaker creates a Firebase project and gives out the deployment link to the attendees. They check it and the site is not found. Then, the speaker checkouts to the hosting branch in which the website contains a simple logo and description of DSC AE-FUNAI. The speaker then deploys and asks the attendees to refresh the page, and they will notice the immediate change from `firebase deploy`.
 
